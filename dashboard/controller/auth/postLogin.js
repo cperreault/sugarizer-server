@@ -52,7 +52,7 @@ module.exports = function postLogin(req, res) {
 			body: form
 		}, function(error, response, body) {
 
-			if (response.statusCode == 200) {
+			if (response && response.statusCode == 200) {
 				//store user and key in session
 				req.session.user = response.body;
 
