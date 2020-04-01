@@ -35,7 +35,7 @@ module.exports = function postLogin(req, res) {
 		user: JSON.stringify({
 			name: req.body.username,
 			password: req.body.password,
-			role: role
+			// role: role
 		})
 	};
 	
